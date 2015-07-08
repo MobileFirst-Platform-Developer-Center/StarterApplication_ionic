@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<!--  
+    COPYRIGHT LICENSE: This information contains sample code provided in source code form. You may copy, modify, and distribute
+    these sample programs in any form without payment to IBM® for the purposes of developing, using, marketing or distributing
+    application programs conforming to the application programming interface for the operating platform for which the sample code is written.
+    Notwithstanding anything to the contrary, IBM PROVIDES THE SAMPLE SOURCE CODE ON AN "AS IS" BASIS AND IBM DISCLAIMS ALL WARRANTIES,
+    EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OR CONDITIONS OF MERCHANTABILITY, SATISFACTORY QUALITY,
+    FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND ANY WARRANTY OR CONDITION OF NON-INFRINGEMENT. IBM SHALL NOT BE LIABLE FOR ANY DIRECT,
+    INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR OPERATION OF THE SAMPLE SOURCE CODE.
+    IBM HAS NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS OR MODIFICATIONS TO THE SAMPLE SOURCE CODE.
+  
+ -->
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Starter Application for ionic</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+		<link href="css/ionic.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/main.css" />
+		<script>window.$ = window.jQuery = WLJQ;</script>
+		<script src="js/ionic.bundle.js"></script>
+		<script src="js/angular-route.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/services.js"></script>
+		<script src="js/controllers.js"></script>
+		<script src="js/initOptions.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/messages.js"></script>
+	</head>
+	<body ng-controller="MenuController">
+		<ion-header-bar class="bar bar-header bar-dark">
+			<h1 class="title">Starter Application for ionic</h1>
+		</ion-header-bar>
+		<ion-content id="content">
+			<div ng-view></div>
+		</ion-content>
+		<ion-footer-bar align-title="left" class="tabs tabs-icon-top tabs-dark">
+			<a class="tab-item tab-item-active" ng-href="#feeds" id="feedsTab" ng-click="tabSelect('feedsTab')">
+				<i class="icon ion-social-rss"></i>
+			</a>
+			<a class="tab-item" ng-href="#about" id="payBillTab" ng-click="tabSelect('aboutTab')">
+				<i class="icon ion-information-circled"></i>
+			</a>
+		</ion-footer-bar>
+	</body>
+</html>
